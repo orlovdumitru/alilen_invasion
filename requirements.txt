@@ -1,0 +1,9 @@
+exceptiongroup==1.1.3
+iniconfig==2.0.0
+packaging==23.2
+pkg_resources==0.0.0
+pluggy==1.3.0
+pygame==2.5.2
+pytest==7.4.3
+python-decouple==3.8
+tomli==2.0.1

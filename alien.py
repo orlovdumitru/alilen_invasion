@@ -12,7 +12,7 @@ class Alien(Sprite):
         self.screen = ai_game.screen
         self.settings= ai_game.settings
         # load the alien image and set it rect attribure.
-        self.image = pygame.image.load("images/spaceship_small.bmp")
+        self.image = pygame.image.load("media/images/spaceship_small.bmp")
         self.rect = self.image.get_rect()
         # Start each new alien near the top left of the screen.
         self.rect.x = self.rect.width
@@ -26,7 +26,6 @@ class Alien(Sprite):
         """
         al_direction = self.settings.alien_direction
         self.x += self.settings.alien_speed * al_direction[al_direction['direction']] # 1 or -1 
-        print(self.settings.alien_speed * al_direction[al_direction['direction']])
         self.rect.x = self.x
 
     def check_edges(self):
